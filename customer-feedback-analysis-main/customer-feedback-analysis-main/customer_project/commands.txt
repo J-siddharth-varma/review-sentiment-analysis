@@ -1,0 +1,138 @@
+    1  git config --global user.name "NithishAK31"
+    2  git config --global user.gmail "nithish2006ak@gmail.com"
+    3  git clone  
+    4  ls
+    5  mkdir customer_project
+    6  cd customer_project/
+    7  ls
+    8  git init
+    9  ls
+   10  git remote add origin https://github.com/NithishAK31/customer_project.git
+   11  git remote
+   12  git status
+   13  git branch
+   14  ls
+   15  ls
+   16  vim customer.py
+   17  cat customer.py 
+   18  vim requirements.txt
+   19  ls
+   20  import pandas as pd
+   21  from textblob import TextBlob
+   22  import matplotlib.pyplot as plt
+   23  # Load the dataset
+   24  df = pd.read_csv("path_to_your_csv/sentiment_analysis_feedback_3000_updated.csv")
+   25  # Function to calculate sentiment
+   26  def get_sentiment(text):
+   27      analysis = TextBlob(text)
+   28      if analysis.sentiment.polarity > 0:;         return 'Positive';     elif analysis.sentiment.polarity < 0:
+   29          return 'Negative'
+   30      else:
+   31          return 'Neutral'
+   32  # Apply sentiment analysis to feedback texts
+   33  df['Sentiment'] = df['Customer Feedback Text'].apply(get_sentiment)
+   34  # Count occurrences of each sentiment type
+   35  sentiment_counts = df['Sentiment'].value_counts()
+   36  # Plot the sentiment counts in a bar chart
+   37  plt.figure(figsize=(8,6))
+   38  sentiment_counts.plot(kind='bar', color=['green', 'red', 'gray'])
+   39  plt.title('Sentiment Analysis of Customer Feedback')
+   40  plt.xlabel('Sentiment')
+   41  plt.ylabel('Number of Feedback')
+   42  plt.xticks(rotation=0)
+   43  plt.show()
+   44  df[df['Sentiment'] == 'Positive'].to_csv('positive_feedback.csv', index=False)
+   45  df[df['Sentiment'] == 'Negative'].to_csv('negative_feedback.csv', index=False)
+   46  df[df['Sentiment'] == 'Neutral'].to_csv('neutral_feedback.csv', index=False)
+   47  python -m venv customer_venv
+   48  ls
+   49  cd ..
+   50  mkdir customer_venv
+   51  python -m venv customer_venv
+   52  which python
+   53  python --version
+   54  winpty python
+   55  which python3
+   56  ls
+   57  python -m venv ./customer_venv/
+   58  python3 -m venv ./customer_venv/
+   59  ls
+   60  cd customer_project/
+   61  ls
+   62  cd ..
+   63  python --version
+   64  which python
+   65  /c/Users/Lonovo/AppData/Local/Microsoft/WindowsApps/python -m venv customer_venv/
+   66  python -m venv ./customer_venv/
+   67  python -m venv ./customer_venv/
+   68  python -m venv ./customer_venv/
+   69  /c/Users/Lonovo/AppData/Local/Microsoft/WindowsApps/python
+   70  /c/Users/Lonovo/AppData/Local/Microsoft/WindowsApps/python3.exe 
+   71  python -m venv ./customer_venv/
+   72  LS
+   73  ls
+   74  ls customer_venv/
+   75  cd customer_project/
+   76  ls
+   77  source ../customer_venv/Scripts/activate
+   78  pip install pandas textblob matplotlib
+   79  pip install pandas textblob matplotlib
+   80  pip list
+   81  ls
+   82  ll
+   83  ll
+   84  pwd
+   85  ls
+   86  ll
+   87  ll
+   88  customer.py
+   89  ls
+   90  ./customer.py
+   91  python --version
+   92  python ./customer.py 
+   93  python ./customer.py 
+   94  deactivate
+   95  python ./customer.py 
+   96  source ../customer_venv/Scripts/activate
+   97  python ./customer.py 
+   98  ll
+   99  python ./customer.py 
+  100  ource ../customer_venv/Scripts/activate
+  101  history
+  102  pwd
+  103  ll
+  104  cd Desktop/customer_project/
+  105  ls
+  106  source ../customer_venv/Scripts/Activate
+  107  python customer.py 
+  108  ll
+  109  vim customer.py 
+  110  python customer.py 
+  111  cat customer.py 
+  112  vim customer.py 
+  113  python customer.py 
+  114  ls
+  115  cat positive_feedback.csv >> negative_feedback.csv 
+  116  python customer.py 
+  117  ll
+  118  cat negative_feedback.csv 
+  119  echo "sajgsd" > negative_feedback.csv 
+  120  cat negative_feedback.csv 
+  121  ll
+  122  vim a
+  123  ll
+  124  python customer.py 
+  125  cat negative_feedback.csv 
+  126  ll
+  127  python customer.py 
+  128  ll
+  129  touch b
+  130  ll
+  131  touch sentiment_analysis_feedback_3000_updated.csv 
+  132  ll
+  133  rm a b
+  134  ls
+  135  history
+  136  cat commands.txt 
+  137  cat history > commands.txt 
+  138  history > commands.txt 
